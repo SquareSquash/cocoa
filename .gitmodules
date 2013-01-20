@@ -1,0 +1,6 @@
+[submodule "Vendor/ISO8601DateFormatter"]
+	path = Vendor/ISO8601DateFormatter
+	url = git://github.com/keithpitt/ISO8601DateFormatter.git
+[submodule "Vendor/PLCrashReporter"]
+	path = Vendor/PLCrashReporter
+	url = git://github.com/SquareSquash/PLCrashReporter.git
