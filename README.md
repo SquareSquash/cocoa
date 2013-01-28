@@ -161,6 +161,9 @@ own projects, there are a few things you should be aware of:
 * Both targets have a build script that grabs the current Git revision of the
   project and writes it to a file in the application bundle. This is how the
   application knows which Git revision to report exceptions under.
+* The path "@loader_path/../Frameworks" was added to the application's Runpath
+  Search Paths build setting. This allows it to find the embedded SquashCocoa
+  framework.
 
 Sub-Licenses
 ------------
