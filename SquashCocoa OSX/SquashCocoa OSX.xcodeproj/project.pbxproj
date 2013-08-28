@@ -17,6 +17,9 @@
 		2253B01916AB825B00A9A4C0 /* SquashCocoa OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22C1EA9416AB4C3B00FC6E94 /* SquashCocoa OSX.framework */; };
 		2253B04616ABACC100A9A4C0 /* CrashReporter.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 22BF01A616AB57D800F5B384 /* CrashReporter.framework */; };
 		2253B04716ABACD000A9A4C0 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF01A616AB57D800F5B384 /* CrashReporter.framework */; };
+		22BCAA8817CD8F2000DA7EE2 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BCAA8517CD8F2000DA7EE2 /* GTMDefines.h */; };
+		22BCAA8917CD8F2000DA7EE2 /* GTMStringEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BCAA8617CD8F2000DA7EE2 /* GTMStringEncoding.h */; };
+		22BCAA8A17CD8F2000DA7EE2 /* GTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BCAA8717CD8F2000DA7EE2 /* GTMStringEncoding.m */; };
 		22BF070A16AB5C2D00F5B384 /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF070916AB5C2D00F5B384 /* ExceptionHandling.framework */; };
 		22BFFE8316AB57D700F5B384 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BFFAC916AB57D500F5B384 /* ISO8601DateFormatter.h */; };
 		22BFFE8416AB57D700F5B384 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BFFACA16AB57D500F5B384 /* ISO8601DateFormatter.m */; };
@@ -296,6 +299,9 @@
 		2253B00E16AB822B00A9A4C0 /* STAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
 		2253B00F16AB822B00A9A4C0 /* STAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STAppDelegate.m; sourceTree = "<group>"; };
 		2253B01216AB822B00A9A4C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		22BCAA8517CD8F2000DA7EE2 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		22BCAA8617CD8F2000DA7EE2 /* GTMStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMStringEncoding.h; sourceTree = "<group>"; };
+		22BCAA8717CD8F2000DA7EE2 /* GTMStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStringEncoding.m; sourceTree = "<group>"; };
 		22BF070916AB5C2D00F5B384 /* ExceptionHandling.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExceptionHandling.framework; path = System/Library/Frameworks/ExceptionHandling.framework; sourceTree = SDKROOT; };
 		22BFFAC916AB57D500F5B384 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
 		22BFFACA16AB57D500F5B384 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
@@ -2645,6 +2651,9 @@
 		22C1EABC16AB4EA600FC6E94 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				22BCAA8517CD8F2000DA7EE2 /* GTMDefines.h */,
+				22BCAA8617CD8F2000DA7EE2 /* GTMStringEncoding.h */,
+				22BCAA8717CD8F2000DA7EE2 /* GTMStringEncoding.m */,
 				22C1EABD16AB4EA600FC6E94 /* Reachability.h */,
 				22C1EABE16AB4EA600FC6E94 /* Reachability.m */,
 			);
@@ -2664,6 +2673,8 @@
 				22C1EABF16AB4EA600FC6E94 /* README.h in Headers */,
 				22C1EAC616AB4EA600FC6E94 /* Reachability.h in Headers */,
 				22BFFE8316AB57D700F5B384 /* ISO8601DateFormatter.h in Headers */,
+				22BCAA8817CD8F2000DA7EE2 /* GTMDefines.h in Headers */,
+				22BCAA8917CD8F2000DA7EE2 /* GTMStringEncoding.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3072,6 +3083,7 @@
 				22C1EAC516AB4EA600FC6E94 /* SquashCocoa.m in Sources */,
 				22C1EAC716AB4EA600FC6E94 /* Reachability.m in Sources */,
 				22BFFE8416AB57D700F5B384 /* ISO8601DateFormatter.m in Sources */,
+				22BCAA8A17CD8F2000DA7EE2 /* GTMStringEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

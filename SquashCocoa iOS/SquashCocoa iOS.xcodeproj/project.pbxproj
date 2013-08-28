@@ -23,6 +23,8 @@
 		221AAD5316B0CEFB00628F6E /* libSquashCocoa iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1EA7116AB4C1000FC6E94 /* libSquashCocoa iOS.a */; };
 		221AAD5416B0CF0000628F6E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1F82316AB50A100FC6E94 /* CoreLocation.framework */; };
 		221AAD5516B0CF0500628F6E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1F82516AB50A600FC6E94 /* SystemConfiguration.framework */; };
+		22BCAA5C17CD8F0400DA7EE2 /* GTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BCAA5B17CD8F0400DA7EE2 /* GTMStringEncoding.m */; };
+		22BCAA5D17CD8F0400DA7EE2 /* GTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BCAA5B17CD8F0400DA7EE2 /* GTMStringEncoding.m */; };
 		22BF057E16AB57E200F5B384 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF01F616AB57E100F5B384 /* ISO8601DateFormatter.m */; };
 		22BF06EE16AB5A0B00F5B384 /* libCrashReporter-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF06A416AB57E200F5B384 /* libCrashReporter-iphoneos.a */; };
 		22BF06F416AB5A6100F5B384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1EA7416AB4C1000FC6E94 /* Foundation.framework */; };
@@ -309,6 +311,9 @@
 		221AAD4316B0CEAB00628F6E /* STViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STViewController.m; sourceTree = "<group>"; };
 		221AAD4616B0CEAB00628F6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/STViewController_iPhone.xib; sourceTree = "<group>"; };
 		221AAD4916B0CEAB00628F6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/STViewController_iPad.xib; sourceTree = "<group>"; };
+		22BCAA5917CD8F0400DA7EE2 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		22BCAA5A17CD8F0400DA7EE2 /* GTMStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMStringEncoding.h; sourceTree = "<group>"; };
+		22BCAA5B17CD8F0400DA7EE2 /* GTMStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStringEncoding.m; sourceTree = "<group>"; };
 		22BF01F516AB57E100F5B384 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
 		22BF01F616AB57E100F5B384 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
 		22BF01F716AB57E100F5B384 /* ISO8601DateFormatter.vendorspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ISO8601DateFormatter.vendorspec; sourceTree = "<group>"; };
@@ -2673,6 +2678,9 @@
 		22C1EAD016AB4EB300FC6E94 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				22BCAA5917CD8F0400DA7EE2 /* GTMDefines.h */,
+				22BCAA5A17CD8F0400DA7EE2 /* GTMStringEncoding.h */,
+				22BCAA5B17CD8F0400DA7EE2 /* GTMStringEncoding.m */,
 				22C1EAD116AB4EB300FC6E94 /* Reachability.h */,
 				22C1EAD216AB4EB300FC6E94 /* Reachability.m */,
 			);
@@ -3125,6 +3133,7 @@
 				22BF070016AB5AC900F5B384 /* SCOccurrence.m in Sources */,
 				22BF070216AB5AC900F5B384 /* Reachability.m in Sources */,
 				22BF070316AB5AC900F5B384 /* ISO8601DateFormatter.m in Sources */,
+				22BCAA5D17CD8F0400DA7EE2 /* GTMStringEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3137,6 +3146,7 @@
 				22C1F7DE16AB500100FC6E94 /* SquashCocoa.m in Sources */,
 				22C1F7DF16AB500100FC6E94 /* Reachability.m in Sources */,
 				22BF057E16AB57E200F5B384 /* ISO8601DateFormatter.m in Sources */,
+				22BCAA5C17CD8F0400DA7EE2 /* GTMStringEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
