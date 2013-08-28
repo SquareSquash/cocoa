@@ -18,6 +18,8 @@
 #import "PLCrashReporter.h"
 #import "PLCrashReport.h"
 #import "Reachability.h"
+#import "GTMStringEncoding.h"
+
 #if TARGET_OS_MAC && !TARGET_OS_IPHONE && !TARGET_IPHONE_SIMULATOR
 #import <ExceptionHandling/ExceptionHandling.h>
 #endif
@@ -180,6 +182,15 @@ static SquashCocoa *sharedClient = NULL;
             }
 
             SCOccurrence *occurrence = [[SCOccurrence alloc] initWithCrashReport:report];
+
+            // changes in support of squash_ios_crash_log_symbolication ruby gem
+            // encode PL Crash Log binary into websafe base64 for upload
+            GTMStringEncoding *webEncoder = [GTMStringEncoding rfc4648Base64WebsafeStringEncoding];
+            NSString *webEncodedCrashLog = [webEncoder encode:crashData];
+            NSDictionary *userData = [NSDictionary dictionaryWithObject: webEncodedCrashLog forKey:@"PLCrashLog"];
+            // add encoded crash log as 'user_data'
+            occurrence.userData = userData;
+
             NSLog(@"%@ - %@", occurrence, report);
             [occurrence report];
             [occurrence release];

@@ -23,8 +23,9 @@ or Mac OS X 10.5 and above, and written using Objective-C 2.0 or above.
 Requirements
 ------------
 
-This library uses PLCrashReporter (by Landon Fuller), Apple's Reachability
-library, and Peter Hosey's ISO8601DateFormatter library. The latter two are
+This library uses PLCrashReporter (by Landon Fuller), Google's GTMLibrary,
+(specifically the GTMStringEncoding class), Apple's Reachability
+library, and Peter Hosey's ISO8601DateFormatter library. The latter three are
 compiled directly into the library. The former is included as a sub-project and
 compiled as part of the build process. For iOS, the libCrashReporter static
 library is created alongside the libSquashCocoa static library. For Mac OS X,
@@ -68,8 +69,7 @@ startup, such as your app delegate's
 ````
 
 The `reportErrors` method loads any errors recorded from previous crashes and
-transmits them to Squash. Errors are only removed from this queue when Squash
-successfully receives them.
+transmits them along with the PLCrashLog to Squash. Errors are only removed from this queue when Squash successfully receives them.
 
 the `hook` method adds the uncaught-exception and default signal handlers that
 allow Squash to record new crashes.
@@ -176,3 +176,6 @@ the LICENSE.txt file under the project directory for more information.
 
 Reachability by Apple, Inc. is distributed under Apple's open-source license.
 See the Reachability.h file for more information.
+
+Reachability by Google Inc. is distributed under the Apache license, version 2.0.
+See the GTMStringEncoding.h file for more information.
