@@ -2744,7 +2744,8 @@
 		22C1EA6816AB4C1000FC6E94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				CLASSPREFIX = SC;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Square;
 			};
 			buildConfigurationList = 22C1EA6B16AB4C1000FC6E94 /* Build configuration list for PBXProject "SquashCocoa iOS" */;
@@ -3326,7 +3327,6 @@
 		22BF06FD16AB5A6100F5B384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = i386;
 				DSTROOT = /tmp/SquashCocoa_iOS_Simulator.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SquashCocoa iOS Simulator/SquashCocoa iOS Simulator-Prefix.pch";
@@ -3340,7 +3340,6 @@
 		22BF06FE16AB5A6100F5B384 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = i386;
 				DSTROOT = /tmp/SquashCocoa_iOS_Simulator.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SquashCocoa iOS Simulator/SquashCocoa iOS Simulator-Prefix.pch";

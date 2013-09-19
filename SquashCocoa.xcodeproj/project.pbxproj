@@ -97,7 +97,9 @@
 		22C1EA5F16AB4BED00FC6E94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SC;
 				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Square;
 			};
 			buildConfigurationList = 22C1EA6216AB4BED00FC6E94 /* Build configuration list for PBXProject "SquashCocoa" */;
 			compatibilityVersion = "Xcode 3.2";
