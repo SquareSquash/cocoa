@@ -180,8 +180,8 @@ static SquashCocoa *sharedClient = NULL;
             }
 
             SCOccurrence *occurrence = [[SCOccurrence alloc] initWithCrashReport:report];
-            NSLog(@"%@ - %@", occurrence, report);
             [occurrence report];
+            NSLog(@"Squash reported exception %@", occurrence);
             [occurrence release];
             *purge = YES;
         } andReturnError:&error];

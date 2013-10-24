@@ -39,6 +39,9 @@ Compile the code with the correct scheme and architecture, creating a
 `libSquashCocoa iOS.a` library. Add this library to your project, being sure it
 is included in your project's Link Binary With Libraries build phase.
 
+You may also need to link against libstdc++ to avoid linker errors.. No idea
+why.
+
 ### Mac OS X
 
 Compile the code with the correct scheme and architecture, creating a
@@ -147,14 +150,11 @@ own projects, there are a few things you should be aware of:
   (Ruby Version Manager) and has installed the squash_ios_symbolicator gem into
   an RVM gemset. You should run `which symbolicate` and `which squash_release`
   in your build environment to get the correct absolute path to these binaries
-  to use in your Squash build scripts.
+  to use in your Squash build scripts. If you already have RVM installed,
+  running `bundle install` will install the necessary gems.
 * The build script that notifies Squash of a new deploy associates the deploy
-  with an environment named either "development" or "release" depending on the
-  value of the `SKIP_INSTALL` build setting. The default build settings have
-  been altered so that `SKIP_INSTALL` is false for debug builds. In practice,
-  you probably want to notify Squash of release builds only, so you should
-  configure your project to run that script only on release builds, and skip
-  development builds entirely.
+  with an environment named "release". Both build scripts only run when building
+  with the Install action.
 * The debugger, when used in conjunction with the iOS Simulator, suppresses
   Squash's ability to record exceptions. The debugger has been disabled for the
   iOS tester build scheme.

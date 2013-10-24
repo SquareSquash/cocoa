@@ -12,10 +12,8 @@
 		2253B00D16AB822B00A9A4C0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2253B00B16AB822B00A9A4C0 /* Credits.rtf */; };
 		2253B01016AB822B00A9A4C0 /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2253B00F16AB822B00A9A4C0 /* STAppDelegate.m */; };
 		2253B01316AB822B00A9A4C0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2253B01116AB822B00A9A4C0 /* MainMenu.xib */; };
-		2253B01716AB823D00A9A4C0 /* SquashCocoa OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1EA9416AB4C3B00FC6E94 /* SquashCocoa OSX.framework */; };
 		2253B01916AB825B00A9A4C0 /* SquashCocoa OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22C1EA9416AB4C3B00FC6E94 /* SquashCocoa OSX.framework */; };
 		2253B04616ABACC100A9A4C0 /* CrashReporter.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 22BF01A616AB57D800F5B384 /* CrashReporter.framework */; };
-		2253B04716ABACD000A9A4C0 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF01A616AB57D800F5B384 /* CrashReporter.framework */; };
 		22BFFE8316AB57D700F5B384 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BFFAC916AB57D500F5B384 /* ISO8601DateFormatter.h */; };
 		22BFFE8416AB57D700F5B384 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BFFACA16AB57D500F5B384 /* ISO8601DateFormatter.m */; };
 		22C1EAA216AB4C3B00FC6E94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22C1EAA016AB4C3B00FC6E94 /* InfoPlist.strings */; };
@@ -28,6 +26,8 @@
 		22C1EAC516AB4EA600FC6E94 /* SquashCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1EABB16AB4EA600FC6E94 /* SquashCocoa.m */; };
 		22C1EAC616AB4EA600FC6E94 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C1EABD16AB4EA600FC6E94 /* Reachability.h */; settings = {ATTRIBUTES = (); }; };
 		22C1EAC716AB4EA600FC6E94 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1EABE16AB4EA600FC6E94 /* Reachability.m */; };
+		22C75559181892DC0031150D /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF01A616AB57D800F5B384 /* CrashReporter.framework */; };
+		22C7555B181892EE0031150D /* SquashCocoa OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1EA9416AB4C3B00FC6E94 /* SquashCocoa OSX.framework */; };
 		22CBDABD17EA733400A4737D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CBDABC17EA733400A4737D /* Cocoa.framework */; };
 		22CBDABE17EA733400A4737D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CBDABC17EA733400A4737D /* Cocoa.framework */; };
 		22CBDAC017EA734500A4737D /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CBDABF17EA734500A4737D /* ExceptionHandling.framework */; };
@@ -1139,7 +1139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2253B01716AB823D00A9A4C0 /* SquashCocoa OSX.framework in Frameworks */,
+				22C7555B181892EE0031150D /* SquashCocoa OSX.framework in Frameworks */,
 				22CBDABE17EA733400A4737D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1148,6 +1148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C75559181892DC0031150D /* CrashReporter.framework in Frameworks */,
 				22CBDAC017EA734500A4737D /* ExceptionHandling.framework in Frameworks */,
 				22CBDAC417EA736300A4737D /* CoreLocation.framework in Frameworks */,
 				22CBDABD17EA733400A4737D /* Cocoa.framework in Frameworks */,
@@ -1155,7 +1156,6 @@
 				22CBDAC617EA736900A4737D /* AppKit.framework in Frameworks */,
 				22CBDAC217EA735900A4737D /* SystemConfiguration.framework in Frameworks */,
 				22CBDAC817EA737300A4737D /* CoreData.framework in Frameworks */,
-				2253B04716ABACD000A9A4C0 /* CrashReporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2685,6 +2685,8 @@
 				2253AFFC16AB822B00A9A4C0 /* Frameworks */,
 				2253AFFD16AB822B00A9A4C0 /* Resources */,
 				22697D5316B0DC6D006159AF /* Copy Git Revision */,
+				22C755851818A01F0031150D /* Notify Squash of Release */,
+				22C755861818A0250031150D /* Upload Symbolication Data to Squash */,
 			);
 			buildRules = (
 			);
@@ -3057,6 +3059,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "git --git-dir=\"$PROJECT_DIR/../.git\" rev-parse HEAD > \"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Contents/Resources/Revision\"";
+		};
+		22C755851818A01F0031150D /* Notify Squash of Release */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Notify Squash of Release";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "~/.rvm/bin/rvm 1.9.3@squash_ios exec env squash_release --project-dir=\"$PROJECT_DIR/..\" \"http://localhost:3000\" ${SQUASH_API_KEY} $([[ ${SKIP_INSTALL} = NO ]] && echo \"release\" || echo \"development\")";
+		};
+		22C755861818A0250031150D /* Upload Symbolication Data to Squash */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Upload Symbolication Data to Squash";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "~/.rvm/bin/rvm 1.9.3@squash_ios exec env symbolicate \"http://localhost:3000\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

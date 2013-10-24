@@ -20,11 +20,9 @@
 		221AAD4716B0CEAB00628F6E /* STViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221AAD4516B0CEAB00628F6E /* STViewController_iPhone.xib */; };
 		221AAD4A16B0CEAB00628F6E /* STViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221AAD4816B0CEAB00628F6E /* STViewController_iPad.xib */; };
 		221AAD5216B0CEF200628F6E /* libSquashCocoa iOS Simulator.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22BF06F316AB5A6100F5B384 /* libSquashCocoa iOS Simulator.a */; };
-		221AAD5316B0CEFB00628F6E /* libSquashCocoa iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1EA7116AB4C1000FC6E94 /* libSquashCocoa iOS.a */; };
 		221AAD5416B0CF0000628F6E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1F82316AB50A100FC6E94 /* CoreLocation.framework */; };
 		221AAD5516B0CF0500628F6E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1F82516AB50A600FC6E94 /* SystemConfiguration.framework */; };
 		22BF057E16AB57E200F5B384 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF01F616AB57E100F5B384 /* ISO8601DateFormatter.m */; };
-		22BF06EE16AB5A0B00F5B384 /* libCrashReporter-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF06A416AB57E200F5B384 /* libCrashReporter-iphoneos.a */; };
 		22BF06F416AB5A6100F5B384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1EA7416AB4C1000FC6E94 /* Foundation.framework */; };
 		22BF06FF16AB5AC900F5B384 /* SCFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1EACB16AB4EB300FC6E94 /* SCFunctions.m */; };
 		22BF070016AB5AC900F5B384 /* SCOccurrence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1EACD16AB4EB300FC6E94 /* SCOccurrence.m */; };
@@ -33,7 +31,6 @@
 		22BF070316AB5AC900F5B384 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF01F616AB57E100F5B384 /* ISO8601DateFormatter.m */; };
 		22BF070416AB5AD600F5B384 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1F82516AB50A600FC6E94 /* SystemConfiguration.framework */; };
 		22BF070516AB5ADB00F5B384 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1F82316AB50A100FC6E94 /* CoreLocation.framework */; };
-		22BF070616AB5AE300F5B384 /* libCrashReporter-iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF06A616AB57E200F5B384 /* libCrashReporter-iphonesimulator.a */; };
 		22C1EA7516AB4C1000FC6E94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1EA7416AB4C1000FC6E94 /* Foundation.framework */; };
 		22C1F7DC16AB500100FC6E94 /* SCFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1EACB16AB4EB300FC6E94 /* SCFunctions.m */; };
 		22C1F7DD16AB500100FC6E94 /* SCOccurrence.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1EACD16AB4EB300FC6E94 /* SCOccurrence.m */; };
@@ -41,6 +38,10 @@
 		22C1F7DF16AB500100FC6E94 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1EAD216AB4EB300FC6E94 /* Reachability.m */; };
 		22C1F82416AB50A100FC6E94 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1F82316AB50A100FC6E94 /* CoreLocation.framework */; };
 		22C1F82616AB50A600FC6E94 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1F82516AB50A600FC6E94 /* SystemConfiguration.framework */; };
+		22C7552F1818926F0031150D /* libCrashReporter-iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF06A416AB57E200F5B384 /* libCrashReporter-iphoneos.a */; };
+		22C75530181892760031150D /* libCrashReporter-iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BF06A616AB57E200F5B384 /* libCrashReporter-iphonesimulator.a */; };
+		22C755311818927E0031150D /* libSquashCocoa iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C1EA7116AB4C1000FC6E94 /* libSquashCocoa iOS.a */; };
+		22C7558418189EEF0031150D /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C7558318189EEF0031150D /* libstdc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1138,6 +1139,8 @@
 		22C1EAD216AB4EB300FC6E94 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		22C1F82316AB50A100FC6E94 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		22C1F82516AB50A600FC6E94 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22C7555C181893E50031150D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		22C7558318189EEF0031150D /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		22CA671316B096CA00A9D6E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22CA671616B096CA00A9D6E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -1147,9 +1150,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C7558418189EEF0031150D /* libstdc++.dylib in Frameworks */,
+				22C755311818927E0031150D /* libSquashCocoa iOS.a in Frameworks */,
 				221AAD5516B0CF0500628F6E /* SystemConfiguration.framework in Frameworks */,
 				221AAD5416B0CF0000628F6E /* CoreLocation.framework in Frameworks */,
-				221AAD5316B0CEFB00628F6E /* libSquashCocoa iOS.a in Frameworks */,
 				221AAD2D16B0CEAB00628F6E /* UIKit.framework in Frameworks */,
 				221AAD2E16B0CEAB00628F6E /* Foundation.framework in Frameworks */,
 				221AAD2F16B0CEAB00628F6E /* CoreGraphics.framework in Frameworks */,
@@ -1160,7 +1164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BF070616AB5AE300F5B384 /* libCrashReporter-iphonesimulator.a in Frameworks */,
+				22C75530181892760031150D /* libCrashReporter-iphonesimulator.a in Frameworks */,
 				22BF070516AB5ADB00F5B384 /* CoreLocation.framework in Frameworks */,
 				22BF070416AB5AD600F5B384 /* SystemConfiguration.framework in Frameworks */,
 				22BF06F416AB5A6100F5B384 /* Foundation.framework in Frameworks */,
@@ -1171,7 +1175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BF06EE16AB5A0B00F5B384 /* libCrashReporter-iphoneos.a in Frameworks */,
+				22C7552F1818926F0031150D /* libCrashReporter-iphoneos.a in Frameworks */,
 				22C1F82616AB50A600FC6E94 /* SystemConfiguration.framework in Frameworks */,
 				22C1F82416AB50A100FC6E94 /* CoreLocation.framework in Frameworks */,
 				22C1EA7516AB4C1000FC6E94 /* Foundation.framework in Frameworks */,
@@ -2628,6 +2632,8 @@
 		22C1EA7316AB4C1000FC6E94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22C7558318189EEF0031150D /* libstdc++.dylib */,
+				22C7555C181893E50031150D /* libc++.dylib */,
 				22C1F82516AB50A600FC6E94 /* SystemConfiguration.framework */,
 				22C1F82316AB50A100FC6E94 /* CoreLocation.framework */,
 				22C1EA7416AB4C1000FC6E94 /* Foundation.framework */,
@@ -3078,7 +3084,7 @@
 		};
 		22697D5416B1EFE4006159AF /* Notify Squash of Release */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -3086,13 +3092,13 @@
 			name = "Notify Squash of Release";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "~/.rvm/bin/rvm 1.9.3@squash_ios exec env squash_release --project-dir=\"$PROJECT_DIR/..\" \"http://localhost:3000\" ${SQUASH_API_KEY} $([[ ${SKIP_INSTALL} = NO ]] && echo \"release\" || echo \"development\")";
 		};
 		22697D5516B208C7006159AF /* Upload Symbolication Data to Squash */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -3100,7 +3106,7 @@
 			name = "Upload Symbolication Data to Squash";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "~/.rvm/bin/rvm 1.9.3@squash_ios exec env symbolicate \"http://localhost:3000\"";
 		};
